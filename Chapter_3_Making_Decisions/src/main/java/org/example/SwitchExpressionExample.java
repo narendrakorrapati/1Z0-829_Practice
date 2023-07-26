@@ -103,4 +103,19 @@ public class SwitchExpressionExample {
         System.out.println(weather);
     }
 
+
+    void printReptile(int category) {
+//        var type = switch(category) {  //Does not compile
+//            case 1,2 ->
+//                    "Snake";
+//            case 3,4 ->
+//                    "Lizard";
+//            case 5,6 ->
+//                    "Turtle";
+//            case 7,8 ->
+//                    "Alligator";
+//        };
+//        System.out.print(type);
+    }
+
 }

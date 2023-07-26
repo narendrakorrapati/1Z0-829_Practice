@@ -5,6 +5,8 @@ public class SwitchStatementExample1 {
     public static void main(String[] args) {
         printDayOfWeek(1);
         printSeason(2);
+        System.out.println();
+        System.out.println(returnFromSwitch(2));
     }
 
     public static void printDayOfWeek(int day) {
@@ -23,7 +25,6 @@ public class SwitchStatementExample1 {
                 break;
             case 4:
                 System.out.print("Thursday");
-                break;
             case 5:
                 System.out.print("Friday");
                 break;
@@ -62,5 +63,14 @@ public class SwitchStatementExample1 {
             //case cookies : // DOES NOT COMPILE
             case 3 * 5 :
         }
+    }
+
+    public static String returnFromSwitch(int number) {
+
+        return switch (number) {
+            case 1 -> "1";
+            case 2 -> "2";
+            default -> "10";
+        };
     }
 }
